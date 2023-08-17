@@ -1,0 +1,94 @@
+  @import url('https://fonts.googleapis.com/css2?family=Belanosima&display=swap');
+        body{
+            background-color: rgb(0, 18, 45);
+        }
+        @keyframes slideleft{
+            0%{ border-radius:71% 29% 73% 27% / 41% 64% 36% 59%  ;}
+            10%{border-radius: 75% 25% 73% 27% / 31% 64% 36% 69% ;}
+            20%{border-radius:51% 49% 43% 57% / 31% 64% 36% 69%  ;}
+            30%{border-radius: 82% 18% 43% 57% / 31% 64% 36% 69% ;}
+            40%{border-radius: 56% 44% 43% 57% / 42% 64% 36% 58% ;}
+            50%{border-radius: 56% 44% 43% 57% / 42% 34% 66% 58% ;}
+            60%{border-radius: 56% 44% 43% 57% / 42% 34% 66% 58% ;}
+            70%{border-radius:56% 44% 43% 57% / 42% 34% 66% 58% ;}
+            80%{border-radius: 56% 44% 43% 57% / 42% 64% 36% 58% ;}
+            90%{border-radius: 75% 25% 73% 27% / 31% 64% 36% 69% ;}
+            100%{border-radius: 71% 29% 73% 27% / 41% 64% 36% 59% ;}
+        }
+
+        @keyframes round{
+              0%{
+                   transform: translateX(0px);
+                }
+                25%{
+                    transform: translateX(100px);
+                }
+                50%{
+                    transform: translateX(400px); 
+                }
+                75%{
+                    transform: translateX(100px);  
+                }
+                100%{
+                  transform: translateX(0px);
+              }
+
+        }
+        .box1{
+            background-color: white;
+            opacity: 5%;
+            height: 100vh;
+            width: 100vh;
+            animation: slideleft 30s ease-in infinite;
+            
+        }
+        .box2{
+            background-color: white;
+            opacity: 5%;
+            height: 50vh;
+            width: 50vh;
+            border-radius: 68% 32% 58% 42% / 41% 42% 58% 59% ;
+            position: relative;
+            left:750px;
+            top:-200px;
+            animation: round 15s linear infinite;
+            
+        }
+        .b1{
+            height: 45vh;
+            width: 45vh;
+            background-image: linear-gradient(rgb(255, 0, 162),50%,rgb(135, 16, 254));
+            border-radius: 56% 44% 43% 57% / 42% 34% 66% 58% ;
+            transform: translateY(-900px);
+            position: fixed;
+            left:600px;
+            z-index: 2;
+        }
+        .b1 h1{
+            text-align: center;
+            position:relative;
+            top:80px;
+            font-family:montserrat;
+            color:white;
+        }
+        .b2{
+            height: 45vh;
+            width: 45vh;
+            background-color: white;
+            opacity: 5%;
+            border-radius: 43% 57% 58% 42% / 41% 42% 58% 59% ;
+            transform: translateY(-850px);
+            position: fixed;
+            left:550px;
+            z-index: 1;
+            
+        }
+        .b1 h2{
+            text-align: center;
+            position:relative;
+            top:60px;
+            left:5px;
+            font-family:'Belanosima', sans-serif;
+            color:white;
+            font-size: 25px;
+        }
